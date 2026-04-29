@@ -1,0 +1,246 @@
+{
+  "_meta": {
+    "note": "Working folder migrated from IDEATION to GIS URLS on 2026-04-29 per user direction. Tier A (12 counties) entries below were reconstructed from lovable-counties-config.json's fieldMap on the same day; the 'fields' arrays here are the canonical-mapped subset, not the full raw ArcGIS field list. The lovable-counties-config.json fieldMap remains the authoritative production mapping. New counties added from Day 2 onward will record full raw field arrays as discovered."
+  },
+  "Bexar": {
+    "endpointType": "arcgis",
+    "url": "https://maps.bexar.org/arcgis/rest/services/Parcels/MapServer/0/query",
+    "layerNumber": 0,
+    "fields": ["OBJECTID", "PropID", "AcctNumb", "Owner", "AddrLn1", "AddrCity", "AddrSt", "Zip", "Situs", "TotVal", "LandVal", "ImprVal", "LglAcres", "TOT_GBA", "YrBlt", "NumRooms", "LglDesc", "Nbhd", "TaxUnits", "Exempts", "PropUse", "State_cd"],
+    "discoveredOn": "2026-04-26",
+    "verified": false,
+    "websiteUrl": "https://www.bcad.org/",
+    "notes": "Hosted by Bexar County (maps.bexar.org), copyrighted to Bexar County Appraisal District. Layer copyright text shows last update Sept 2019; data freshness should be re-checked. Fields list is a partial reconstruction from fieldMap."
+  },
+  "Harris": {
+    "endpointType": "arcgis",
+    "url": "https://www.gis.hctx.net/arcgis/rest/services/HCAD/Parcels/MapServer/0/query",
+    "layerNumber": 0,
+    "fields": ["OBJECTID", "HCAD_NUM", "acct_num", "owner_name_1", "owner_name_2", "mail_addr_1", "mail_city", "mail_state", "mail_zip", "site_str_num", "site_str_name", "site_str_sfx", "site_city", "site_zip", "total_market_val", "land_value", "impr_value", "Acreage", "land_sqft", "legal_dscr_1", "legal_dscr_2", "legal_dscr_3", "legal_dscr_4", "land_use", "state_class"],
+    "discoveredOn": "2026-04-26",
+    "verified": false,
+    "websiteUrl": "https://hcad.org/",
+    "notes": "Authoritative HCAD parcels layer hosted on Harris County GIS server (gis.hctx.net). Fields list is a partial reconstruction from fieldMap."
+  },
+  "Travis": {
+    "endpointType": "arcgis",
+    "url": "https://gis.traviscountytx.gov/server1/rest/services/Boundaries_and_Jurisdictions/TCAD_public/MapServer/0/query",
+    "layerNumber": 0,
+    "fields": ["OBJECTID", "PROP_ID", "geo_id", "situs_address", "situs_city", "situs_zip", "tcad_acres", "legal_desc", "sub_dec", "entities"],
+    "discoveredOn": "2026-04-26",
+    "verified": false,
+    "websiteUrl": "https://traviscad.org/",
+    "notes": "TCAD parcels assembled and updated monthly by Travis County TNR; sourced from Travis Central Appraisal District. VALUE-POOR LAYER: no owner or value fields. Fields list is a partial reconstruction from fieldMap."
+  },
+  "Dallas": {
+    "endpointType": "arcgis",
+    "url": "https://maps.dcad.org/prdwa/rest/services/Property/ParcelQuery/MapServer/4/query",
+    "layerNumber": 4,
+    "fields": ["OBJECTID", "PARCELID", "LOWPARCELID", "OWNERNME1", "OWNERNME2", "PSTLADDRESS", "PSTLCITY", "PSTLSTATE", "PSTLZIP5", "SITEADDRESS", "CNTASSDVAL", "LNDVALUE", "IMPVALUE", "STATEDAREA", "BLDGAREA", "RESYRBLT", "PRPRTYDSCRP", "CNVYNAME", "SCHLDSCRP", "CVTTXDSCRP", "USEDSCRP", "CLASSDSCRP"],
+    "discoveredOn": "2026-04-26",
+    "verified": false,
+    "websiteUrl": "https://www.dallascad.org/",
+    "notes": "DCAD ParcelPublishing layer (id=4) inside Property/ParcelQuery MapServer. Fields list is a partial reconstruction from fieldMap."
+  },
+  "Tarrant": {
+    "endpointType": "arcgis",
+    "url": "https://mapit.tarrantcounty.com/arcgis/rest/services/Tax/TCProperty/MapServer/0/query",
+    "layerNumber": 0,
+    "fields": ["OBJECTID", "TAXPIN", "ACCOUNT", "OWNER_NAME", "OWNER_ADDR", "OWNER_CITY", "STATE", "OWNER_ZIP", "SITUS_ADDR", "CITY", "ZIPCODE", "TOTAL_VALU", "LAND_VALUE", "IMPR_VALUE", "LAND_ACRES", "LAND_SQFT", "LIVING_ARE", "YEAR_BUILT", "BEDROOMS", "BATHROOMS", "LEGAL_1", "LEGAL_2", "LEGAL_3", "LEGAL_4", "SubdivisionName", "SCHOOL", "EXEMPTION_"],
+    "discoveredOn": "2026-04-26",
+    "verified": false,
+    "websiteUrl": "https://www.tad.org/",
+    "notes": "Tarrant County government hosts the layer; data derived from Tarrant Appraisal District (TAD). Most complete schema in Tier A. Fields list is a partial reconstruction from fieldMap."
+  },
+  "Collin": {
+    "endpointType": "arcgis",
+    "url": "https://gismaps.cityofallen.org/arcgis/rest/services/ReferenceData/Collin_County_Appraisal_District_Parcels/MapServer/1/query",
+    "layerNumber": 1,
+    "fields": ["OBJECTID", "GIS_DBO_Parcel_PROP_ID", "GIS_DBO_Parcel_GEO_ID", "GIS_DBO_AD_Entity_file_as_name", "GIS_DBO_AD_Entity_addr_line1", "GIS_DBO_AD_Entity_addr_city", "GIS_DBO_AD_Entity_addr_state", "GIS_DBO_AD_Entity_addr_zip", "GIS_DBO_AD_Entity_situs_display", "GIS_DBO_AD_Entity_situs_city", "GIS_DBO_AD_Entity_situs_zip", "GIS_DBO_AD_Entity_curr_market", "GIS_DBO_AD_Entity_legal_acreage", "GIS_DBO_AD_Entity_land_total_sq", "GIS_DBO_AD_Entity_living_area", "GIS_DBO_AD_Entity_yr_blt", "GIS_DBO_AD_Entity_legal_desc", "GIS_DBO_AD_Entity_abs_subdv_des", "GIS_DBO_AD_Entity_school", "GIS_DBO_AD_Entity_exemptions", "GIS_DBO_AD_Entity_property_use_", "GIS_DBO_AD_Entity_state_cd"],
+    "discoveredOn": "2026-04-26",
+    "verified": false,
+    "websiteUrl": "https://collincad.org/",
+    "notes": "CCAD parcel polygons hosted by City of Allen. Layer ID is 1 (NOT 0). Field names are prefixed GIS_DBO_AD_Entity_ from join structure. Updated weekly Friday. Fields list is a partial reconstruction from fieldMap."
+  },
+  "Denton": {
+    "endpointType": "arcgis",
+    "url": "https://geo.dentoncad.com/arcgis/rest/services/LinkedParcels2026/MapServer/3/query",
+    "layerNumber": 3,
+    "fields": ["OBJECTID", "pid", "geoID", "name", "nameSecondary", "addrDeliveryLine", "addrCity", "addrState", "addrZip", "situs_full_address", "situsCity", "situsZip", "marketValue", "improvementValue", "legalAcreage", "landTotalSqft", "imprvMainArea", "imprvActualYearBuilt", "legalDescription", "abstractSubdivisionDescription", "schoolTaxingUnitName", "taxingUnits", "exemptions", "useCd", "stateCodes"],
+    "discoveredOn": "2026-04-26",
+    "verified": false,
+    "websiteUrl": "https://www.dentoncad.com/",
+    "notes": "Current DCAD service is LinkedParcels2026, layer 3. Service rotates yearly; recheck annually for LinkedParcels2027. Fields list is a partial reconstruction from fieldMap."
+  },
+  "Williamson": {
+    "endpointType": "arcgis",
+    "url": "https://gis.wilco.org/arcgis/rest/services/public/county_wcad_parcels/MapServer/0/query",
+    "layerNumber": 0,
+    "fields": ["OBJECTID", "PropertyID", "PropertyNumber", "PrimaryOwner", "OWNERNME2", "PSTLADDRESS", "PSTLCITY", "PSTLSTATE", "PSTLZIP5", "SitusAddress", "Scity", "Szip", "TotalPropMktValue", "TotalLandMktValue", "TotalImpMktValue", "Acres", "TotalSqFtLivingArea", "RESYRBLT", "LegalDesc", "CNVYNAME", "SCHLDSCRP", "TaxingUnitList", "ExemptionList", "USEDSCRP", "CLASSDSCRP"],
+    "discoveredOn": "2026-04-26",
+    "verified": false,
+    "websiteUrl": "https://www.wcad.org/",
+    "notes": "WCAD Parcels hosted on Williamson County GIS (gis.wilco.org). Geometry field is uppercase SHAPE (not Shape). Fields list is a partial reconstruction from fieldMap."
+  },
+  "Fort Bend": {
+    "endpointType": "arcgis",
+    "url": "https://gisweb.fortbendcountytx.gov/arcgis/rest/services/InteractiveMap/Parcels/MapServer/1/query",
+    "layerNumber": 1,
+    "fields": ["OBJECTID", "PropertyNumber", "CADReferenceNumber", "OwnerName", "OwnerAddress1", "OwnerCity", "OwnerState", "OwnerZip", "Situs", "TotalValue", "LandValue", "ImprovementValue", "LandSizeAC", "LandSizeFT", "TotalLivingAreaSqFT", "YearBuilt", "Legal", "TaxingUnits", "Exemptions", "LandStateCode"],
+    "discoveredOn": "2026-04-26",
+    "verified": false,
+    "websiteUrl": "https://www.fbcad.org/",
+    "notes": "Fort Bend County GIS hosts the layer. Layer ID is 1 (NOT 0; /0 returns 500). Data updated biannually. Fields list is a partial reconstruction from fieldMap."
+  },
+  "Galveston": {
+    "endpointType": "arcgis",
+    "url": "https://gis.galvestontx.gov/server/rest/services/VUEWorks_Production/Parcels_VUEWorks_Version/MapServer/29/query",
+    "layerNumber": 29,
+    "fields": ["OBJECTID", "GEOID", "NAME", "ADDRESS", "ADDRESS2", "ADDRESS3", "CITY", "ST", "ZIP", "SITUS_NO", "SITUS", "LEGAL", "ENTITIES", "ACRES", "LANDUSE", "PAGE", "NBHD", "INTEREST", "EXEMPT", "FLAGS", "SECURE", "VAL23LAND", "VAL23IMP", "VAL23TOT", "ID", "TEMPID"],
+    "discoveredOn": "2026-04-29",
+    "verified": false,
+    "websiteUrl": "https://galvestoncad.org/",
+    "notes": "Day 2 retry success — real parcels layer is layer 29, NOT 0 (Day 1 had wrong layer ID). Hosted by City of Galveston GIS, copyright Galveston Central Appraisal District. GCAD releases data ~twice/year (Aug/Sept = Certified). Value fields are named VAL23TOT/VAL23LAND/VAL23IMP — appears to be 2023 data, may be stale. ADDRESS/ADDRESS2/ADDRESS3 are mailing-address lines. SHAPE is geometry, OBJECTID is OID. wkid=102740."
+  },
+  "Brazoria": {
+    "endpointType": "arcgis",
+    "url": "https://maps.brazoriacountytx.gov/arcgis/rest/services/general/Parcels/MapServer/1/query",
+    "layerNumber": 1,
+    "fields": ["OBJECTID", "prop_id", "geo_id", "py_owner_name", "SITUS", "situs_city", "situs_zip", "appraised_val", "legal_acreage", "legal_desc", "abs_subdv_desc"],
+    "discoveredOn": "2026-04-26",
+    "verified": false,
+    "websiteUrl": "https://brazoriacad.org/",
+    "notes": "Layer 1 'Parcel Information' is the full BCAD-derived parcel layer; layer 0 is 'Flagged Parcels' only. Hosted by Brazoria County government. Fields list is a partial reconstruction from fieldMap."
+  },
+  "Montgomery": {
+    "endpointType": "arcgis",
+    "url": "https://services6.arcgis.com/EbVsqZ18sv1kVJ3k/ArcGIS/rest/services/Montgomery_County_Parcels/FeatureServer/0/query",
+    "layerNumber": 0,
+    "fields": ["OBJECTID_1", "ACCOUNT_NU", "PRINT_KEY", "OWNER", "OWNER2", "MAIL_1ADDR", "MAIL_CITY", "MAIL_STATE", "MAIL_ZIP", "PROP_ADDR", "FULL_MARKE", "LAND_AV", "ACRES", "SQ_FT", "YR_BUILT", "BEDROOMS", "FULL_BATHS", "DESCR_1", "DESCR_2", "DESCR_3", "NEIGHBORHO", "SCHOOL", "PROP_CLASS", "PRP_CLS_CO"],
+    "discoveredOn": "2026-04-26",
+    "verified": false,
+    "websiteUrl": "https://mcad-tx.org/",
+    "notes": "ArcGIS Online hosted FeatureServer (services6.arcgis.com) maintained by Montgomery County GIS, sourced from MCAD. Schema looks New York-style (SBL, SWIS, MUNI etc.) — flag for manual spot-check. ObjectID field is OBJECTID_1, not OBJECTID. Fields list is a partial reconstruction from fieldMap."
+  },
+  "Hays": {
+    "endpointType": "arcgis",
+    "url": "https://utility.arcgis.com/usrsvcs/servers/02e3ae8dad2b4fba9d1927407c322e27/rest/services/HaysCADWebService1/FeatureServer/0/query",
+    "layerNumber": 0,
+    "fields": ["prop_id_text", "prop_id", "owner_tax_yr", "file_as_name", "legal_acreage", "hood_cd", "school", "city", "county", "next_appraisal_dt", "legal_desc", "legal_desc2", "legal_desc3", "tract_or_lot", "abs_subdv_cd", "land_val", "imprv_val", "market", "block", "map_id", "geo_id", "situs_num", "situs_street_prefx", "situs_street", "situs_street_sufix", "situs_city", "situs_state", "situs_zip", "addr_line1", "addr_line2", "addr_line3", "addr_city", "addr_state", "zip", "Deed_Seq", "Deed_Date", "Volume", "Page", "Number", "ObjectID_1"],
+    "discoveredOn": "2026-04-29",
+    "verified": false,
+    "websiteUrl": "https://www.hayscad.com/",
+    "notes": "Hays CAD interactive map (gis.bisclient.com/hayscad) loads parcels from a BIS Consulting-hosted ArcGIS Online federated service via utility.arcgis.com proxy. Layer 0 = Parcels (also: 1 Abstracts, 2 Subdivisions, 3 School Districts, 4 City Limits, 5 Parcel Centroid, 6 Lot Lines, 7 Streets, 8 Hays Boundary, 9 Texas Counties). Object ID field is ObjectID_1 (not OBJECTID). No year_built, bedrooms, or living_area_sqft on this layer. wkid=102740. Situs and legal need CONCAT."
+  },
+  "Comal": {
+    "endpointType": "arcgis",
+    "url": "https://utility.arcgis.com/usrsvcs/servers/5d37dc8436c24c70aa3cdcec26923b60/rest/services/ComalCADWebService/FeatureServer/0/query",
+    "layerNumber": 0,
+    "fields": ["prop_id_text", "prop_id", "owner_tax_yr", "file_as_name", "legal_acreage", "hood_cd", "school", "city", "county", "next_appraisal_dt", "legal_desc", "legal_desc2", "legal_desc3", "tract_or_lot", "abs_subdv_cd", "land_val", "imprv_val", "market", "block", "map_id", "geo_id", "situs_num", "situs_street_prefx", "situs_street", "situs_street_sufix", "situs_city", "situs_state", "situs_zip", "addr_line1", "addr_line2", "addr_line3", "addr_city", "addr_state", "zip", "Deed_Seq", "Deed_Date", "Volume", "Page", "Number", "ObjectID_1"],
+    "discoveredOn": "2026-04-29",
+    "verified": false,
+    "websiteUrl": "https://www.comalad.org/",
+    "notes": "BIS Consulting standard schema (identical to Hays). wkid=102740. ObjectID_1, no year_built/bedrooms/living_area."
+  },
+  "Kendall": {
+    "endpointType": "arcgis",
+    "url": "https://utility.arcgis.com/usrsvcs/servers/de4dc16a88b54906b070b5aaf72be5ef/rest/services/KendallCADWebService/FeatureServer/0/query",
+    "layerNumber": 0,
+    "fields": ["prop_id_text", "prop_id", "owner_tax_yr", "file_as_name", "legal_acreage", "hood_cd", "school", "city", "county", "next_appraisal_dt", "legal_desc", "legal_desc2", "legal_desc3", "tract_or_lot", "abs_subdv_cd", "land_val", "imprv_val", "market", "Block", "map_id", "geo_id", "situs_num", "situs_street_prefx", "situs_street", "situs_street_sufix", "situs_city", "situs_state", "situs_zip", "addr_line1", "addr_line2", "addr_line3", "addr_city", "addr_state", "zip", "Deed_Seq", "Deed_Date", "Volume", "Page", "Number", "ObjectID_1"],
+    "discoveredOn": "2026-04-29",
+    "verified": false,
+    "websiteUrl": "https://kendallad.org/",
+    "notes": "BIS Consulting standard schema. wkid=102740. ObjectID_1. Note: 'Block' field is uppercase B here (vs 'block' in some other BIS counties)."
+  },
+  "Burnet": {
+    "endpointType": "arcgis",
+    "url": "https://utility.arcgis.com/usrsvcs/servers/9831c4c543474c5e96bad050824257e3/rest/services/BurnetCADWebService1/FeatureServer/0/query",
+    "layerNumber": 0,
+    "fields": ["prop_id_text", "prop_id", "owner_tax_yr", "file_as_name", "legal_acreage", "hood_cd", "school", "city", "county", "next_appraisal_dt", "legal_desc", "legal_desc2", "legal_desc3", "tract_or_lot", "abs_subdv_cd", "land_val", "imprv_val", "market", "block", "map_id", "geo_id", "situs_num", "situs_street_prefx", "situs_street", "situs_street_sufix", "situs_city", "situs_state", "situs_zip", "addr_line1", "addr_line2", "addr_line3", "addr_city", "addr_state", "zip", "Deed_Seq", "Deed_Date", "Volume", "Page", "Number", "ObjectID_1"],
+    "discoveredOn": "2026-04-29",
+    "verified": false,
+    "websiteUrl": "https://www.burnet-cad.org/",
+    "notes": "BIS Consulting standard schema. Service name has '1' suffix: BurnetCADWebService1. wkid=102739 (different from most other BIS counties)."
+  },
+  "Blanco": {
+    "endpointType": "arcgis",
+    "url": "https://utility.arcgis.com/usrsvcs/servers/9c7a9f4f7f604ec5b3c57772984b9f4a/rest/services/BlancoCADWebService/FeatureServer/0/query",
+    "layerNumber": 0,
+    "fields": ["prop_id_text", "prop_id", "owner_tax_yr", "file_as_name", "legal_acreage", "hood_cd", "school", "city", "county", "next_appraisal_dt", "legal_desc", "legal_desc2", "legal_desc3", "tract_or_lot", "abs_subdv_cd", "land_val", "imprv_val", "market", "block", "map_id", "geo_id", "situs_num", "situs_street_prefx", "situs_street", "situs_street_sufix", "situs_city", "situs_state", "situs_zip", "addr_line1", "addr_line2", "addr_line3", "addr_city", "addr_state", "zip", "Deed_Seq", "Deed_Date", "Volume", "Page", "Number", "ObjectID_1"],
+    "discoveredOn": "2026-04-29",
+    "verified": false,
+    "websiteUrl": "https://www.blancocad.com/",
+    "notes": "BIS Consulting standard schema. wkid=102739. Note: domain is .com (not .org)."
+  },
+  "Llano": {
+    "endpointType": "arcgis",
+    "url": "https://utility.arcgis.com/usrsvcs/servers/7640f7024cff47a6be21f9632e1d94e7/rest/services/LlanoCADWebService/FeatureServer/0/query",
+    "layerNumber": 0,
+    "fields": ["prop_id_text", "prop_id", "owner_tax_yr", "file_as_name", "legal_acreage", "hood_cd", "school", "city", "county", "next_appraisal_dt", "legal_desc", "legal_desc2", "legal_desc3", "tract_or_lot", "abs_subdv_cd", "land_val", "imprv_val", "market", "Block", "map_id", "geo_id", "situs_num", "situs_street_prefx", "situs_street", "situs_street_sufix", "situs_city", "situs_state", "situs_zip", "addr_line1", "addr_line2", "addr_line3", "addr_city", "addr_state", "zip", "Deed_Seq", "Deed_Date", "Volume", "Page", "Number", "ObjectID_1"],
+    "discoveredOn": "2026-04-29",
+    "verified": false,
+    "websiteUrl": "https://www.llanocad.net/",
+    "notes": "BIS Consulting standard schema. wkid=102739. Note: domain is .net (not .org or .com)."
+  },
+  "Bandera": {
+    "endpointType": "arcgis",
+    "url": "https://utility.arcgis.com/usrsvcs/servers/595df0f11a0e41f5a7e7f49b9624bc05/rest/services/BanderaCADWebService/FeatureServer/0/query",
+    "layerNumber": 0,
+    "fields": ["prop_id_text", "prop_id", "owner_tax_yr", "file_as_name", "legal_acreage", "hood_cd", "school", "city", "county", "next_appraisal_dt", "legal_desc", "legal_desc2", "legal_desc3", "tract_or_lot", "abs_subdv_cd", "land_val", "imprv_val", "market", "Block", "map_id", "geo_id", "situs_num", "situs_street_prefx", "situs_street", "situs_street_sufix", "situs_city", "situs_state", "situs_zip", "addr_line1", "addr_line2", "addr_line3", "addr_city", "addr_state", "zip", "Deed_Seq", "Deed_Date", "Volume", "Page", "Number", "ObjectID_1"],
+    "discoveredOn": "2026-04-29",
+    "verified": false,
+    "websiteUrl": "https://bancad.org/",
+    "notes": "BIS Consulting standard schema. wkid=102740. WARNING: banderacad.org is a third-party private search portal — the real Bandera CAD lives at bancad.org. Don't confuse them."
+  },
+  "Gillespie": {
+    "endpointType": "arcgis",
+    "url": "https://utility.arcgis.com/usrsvcs/servers/9a532636cbd34f79b6d9b5c4cc53baff/rest/services/GillespieCADWebService/FeatureServer/0/query",
+    "layerNumber": 0,
+    "fields": ["prop_id_text", "prop_id", "owner_tax_yr", "file_as_name", "legal_acreage", "hood_cd", "school", "city", "county", "next_appraisal_dt", "legal_desc", "legal_desc2", "legal_desc3", "tract_or_lot", "abs_subdv_cd", "land_val", "imprv_val", "market", "Block", "map_id", "geo_id", "situs_num", "situs_street_prefx", "situs_street", "situs_street_sufix", "situs_city", "situs_state", "situs_zip", "addr_line1", "addr_line2", "addr_line3", "addr_city", "addr_state", "zip", "Deed_Seq", "Deed_Date", "Volume", "Page", "Number", "ObjectID_1"],
+    "discoveredOn": "2026-04-29",
+    "verified": false,
+    "websiteUrl": "https://www.gillespiecad.org/",
+    "notes": "BIS Consulting standard schema. wkid=102739."
+  },
+  "Kerr": {
+    "endpointType": "arcgis",
+    "url": "https://utility.arcgis.com/usrsvcs/servers/dcfb21f6cfd84a2cb7951ac64fb50838/rest/services/KerrCADWebService/FeatureServer/0/query",
+    "layerNumber": 0,
+    "fields": ["prop_id_text", "prop_id", "owner_tax_yr", "file_as_name", "legal_acreage", "hood_cd", "school", "city", "county", "next_appraisal_dt", "legal_desc", "legal_desc2", "legal_desc3", "tract_or_lot", "abs_subdv_cd", "land_val", "imprv_val", "market", "block", "map_id", "geo_id", "situs_num", "situs_street_prefx", "situs_street", "situs_street_sufix", "situs_city", "situs_state", "situs_zip", "addr_line1", "addr_line2", "addr_line3", "addr_city", "addr_state", "zip", "Deed_Seq", "Deed_Date", "Volume", "Page", "Number", "ObjectID_1"],
+    "discoveredOn": "2026-04-29",
+    "verified": false,
+    "websiteUrl": "https://www.kerrcad.org/",
+    "notes": "BIS Consulting standard schema. wkid=102740."
+  },
+  "Medina": {
+    "endpointType": "arcgis",
+    "url": "https://utility.arcgis.com/usrsvcs/servers/176ee3c2f2e1488fa5e8d782f5e6ede0/rest/services/MedinaCADWebService/FeatureServer/0/query",
+    "layerNumber": 0,
+    "fields": ["prop_id_text", "prop_id", "owner_tax_yr", "file_as_name", "legal_acreage", "hood_cd", "school", "city", "county", "next_appraisal_dt", "legal_desc", "legal_desc2", "legal_desc3", "tract_or_lot", "abs_subdv_cd", "land_val", "imprv_val", "market", "block", "map_id", "geo_id", "situs_num", "situs_street_prefx", "situs_street", "situs_street_sufix", "situs_city", "situs_state", "situs_zip", "addr_line1", "addr_line2", "addr_line3", "addr_city", "addr_state", "zip", "Deed_Seq", "Deed_Date", "Volume", "Page", "Number", "ObjectID_1"],
+    "discoveredOn": "2026-04-29",
+    "verified": false,
+    "status": "needs-retry",
+    "websiteUrl": "https://www.medinacad.org/",
+    "notes": "BIS Consulting standard schema. wkid=102740. WARNING: this endpoint returns HTTP 403 'You do not have permissions' when fetched directly from a different origin. Schema was successfully read from inside the BIS app context (gis.bisclient.com/medinacad). JVLOT may need a server-side proxy or referer-spoofing for Medina specifically. Other BIS counties (Hays, Comal, Kendall, etc.) are NOT referer-locked. Investigate before launch."
+  },
+  "Atascosa": {
+    "endpointType": "arcgis",
+    "url": "https://utility.arcgis.com/usrsvcs/servers/1f9cc445583d46eb86196061158cfa26/rest/services/AtascosaCADWebService/FeatureServer/0/query",
+    "layerNumber": 0,
+    "fields": ["prop_id_text", "prop_id", "owner_tax_yr", "file_as_name", "legal_acreage", "hood_cd", "school", "city", "county", "next_appraisal_dt", "legal_desc", "legal_desc2", "legal_desc3", "tract_or_lot", "abs_subdv_cd", "land_val", "imprv_val", "market", "Block", "map_id", "geo_id", "situs_num", "situs_street_prefx", "situs_street", "situs_street_sufix", "situs_city", "situs_state", "situs_zip", "addr_line1", "addr_line2", "addr_line3", "addr_city", "addr_state", "zip", "Deed_Seq", "Deed_Date", "Volume", "Page", "Number", "ObjectID_1"],
+    "discoveredOn": "2026-04-29",
+    "verified": false,
+    "websiteUrl": "https://www.atascosacad.com/",
+    "notes": "BIS Consulting standard schema. wkid=102740."
+  },
+  "Wilson": {
+    "endpointType": "arcgis",
+    "url": "https://utility.arcgis.com/usrsvcs/servers/b1f92ace279449d09eaa3d93257da49c/rest/services/WilsonCADWebService/FeatureServer/0/query",
+    "layerNumber": 0,
+    "fields": ["prop_id_text", "prop_id", "owner_tax_yr", "file_as_name", "legal_acreage", "hood_cd", "school", "city", "county", "next_appraisal_dt", "legal_desc", "legal_desc2", "legal_desc3", "tract_or_lot", "abs_subdv_cd", "land_val", "imprv_val", "market", "Block", "map_id", "geo_id", "situs_num", "situs_street_prefx", "situs_street", "situs_street_sufix", "situs_city", "situs_state", "situs_zip", "addr_line1", "addr_line2", "addr_line3", "addr_city", "addr_state", "zip", "Deed_Seq", "Deed_Date", "Volume", "Page", "Number", "ObjectID_1"],
+    "discoveredOn": "2026-04-29",
+    "verified": false,
+    "websiteUrl": "https://wilson-cad.org/",
+    "notes": "BIS Consulting standard schema. wkid=102740. Note: hyphen in domain (wilson-cad.org); www.wilsoncad.org returns DNS error."
+  }
+}
