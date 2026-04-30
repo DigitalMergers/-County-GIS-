@@ -786,6 +786,6 @@
         "taxing_units": null, "exemptions": null, "property_use": null, "state_class": null
       },
       "notes": "BIS Consulting standard schema. Domain has hyphen: wilson-cad.org (NOT www.wilsoncad.org which DNS-fails)."
-    }
-  }
-}
+    },
+
+    

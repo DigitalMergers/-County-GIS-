@@ -94,4 +94,4 @@ Daily log for the recurring registry-discovery mission. Each session appends bel
 - **Galveston 2023 values:** the ArcGIS layer's `VAL23*` fields look like 2023 vintage. GCAD's data refresh schedule is ~Aug/Sept each year. JVLOT may want to surface a "data as of" badge for Galveston so users know the values aren't current-year.
 - **BIS counties have no improvement data.** Realie supplement plan: confirm scope with the product side once we see how many counties total fall into "no year_built / no living_area" — likely all of Tier B and probably a chunk of Tier D too.
 
----
+### 

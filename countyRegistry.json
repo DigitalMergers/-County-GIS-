@@ -242,5 +242,5 @@
     "verified": false,
     "websiteUrl": "https://wilson-cad.org/",
     "notes": "BIS Consulting standard schema. wkid=102740. Note: hyphen in domain (wilson-cad.org); www.wilsoncad.org returns DNS error."
-  }
-}
+  },
+ 
