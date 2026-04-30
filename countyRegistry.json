@@ -214,14 +214,13 @@
   },
   "Medina": {
     "endpointType": "arcgis",
-    "url": "https://utility.arcgis.com/usrsvcs/servers/176ee3c2f2e1488fa5e8d782f5e6ede0/rest/services/MedinaCADWebService/FeatureServer/0/query",
+    "url": "https://services6.arcgis.com/j94FvPaik4etwHFk/arcgis/rest/services/MedinaCADWebService/FeatureServer/0/query",
     "layerNumber": 0,
     "fields": ["prop_id_text", "prop_id", "owner_tax_yr", "file_as_name", "legal_acreage", "hood_cd", "school", "city", "county", "next_appraisal_dt", "legal_desc", "legal_desc2", "legal_desc3", "tract_or_lot", "abs_subdv_cd", "land_val", "imprv_val", "market", "block", "map_id", "geo_id", "situs_num", "situs_street_prefx", "situs_street", "situs_street_sufix", "situs_city", "situs_state", "situs_zip", "addr_line1", "addr_line2", "addr_line3", "addr_city", "addr_state", "zip", "Deed_Seq", "Deed_Date", "Volume", "Page", "Number", "ObjectID_1"],
     "discoveredOn": "2026-04-29",
     "verified": false,
-    "status": "needs-retry",
     "websiteUrl": "https://www.medinacad.org/",
-    "notes": "BIS Consulting standard schema. wkid=102740. WARNING: this endpoint returns HTTP 403 'You do not have permissions' when fetched directly from a different origin. Schema was successfully read from inside the BIS app context (gis.bisclient.com/medinacad). JVLOT may need a server-side proxy or referer-spoofing for Medina specifically. Other BIS counties (Hays, Comal, Kendall, etc.) are NOT referer-locked. Investigate before launch."
+    "notes": "BIS Consulting standard schema. wkid=102740. UNLOCKED on Day 2 retry: the working URL is services6.arcgis.com/j94FvPaik4etwHFk/... (BIS Consultants' AGOL tenant), NOT the utility.arcgis.com proxy (which is referer-locked). Same fix applies to Uvalde and Lampasas."
   },
   "Atascosa": {
     "endpointType": "arcgis",
@@ -365,14 +364,13 @@
   },
   "Uvalde": {
     "endpointType": "arcgis",
-    "url": "https://utility.arcgis.com/usrsvcs/servers/29ac4a4d10d94e779fcccb4566123a3d/rest/services/UvaldeCADWebService/FeatureServer/0/query",
+    "url": "https://services6.arcgis.com/j94FvPaik4etwHFk/arcgis/rest/services/UvaldeCADWebService/FeatureServer/0/query",
     "layerNumber": 0,
-    "fields": ["prop_id_text", "prop_id", "owner_tax_yr", "file_as_name", "legal_acreage", "hood_cd", "school", "city", "county", "next_appraisal_dt", "legal_desc", "legal_desc2", "legal_desc3", "tract_or_lot", "abs_subdv_cd", "land_val", "imprv_val", "market", "block", "map_id", "geo_id", "situs_num", "situs_street_prefx", "situs_street", "situs_street_sufix", "situs_city", "situs_state", "situs_zip", "addr_line1", "addr_line2", "addr_line3", "addr_city", "addr_state", "zip", "Deed_Seq", "Deed_Date", "Volume", "Page", "Number", "ObjectID_1"],
+    "fields": ["prop_id_text", "prop_id", "owner_tax_yr", "file_as_name", "legal_acreage", "hood_cd", "school", "city", "county", "next_appraisal_dt", "legal_desc", "legal_desc2", "legal_desc3", "tract_or_lot", "abs_subdv_cd", "land_val", "imprv_val", "market", "Block", "map_id", "geo_id", "situs_num", "situs_street_prefx", "situs_street", "situs_street_sufix", "situs_city", "situs_state", "situs_zip", "addr_line1", "addr_line2", "addr_line3", "addr_city", "addr_state", "zip", "Deed_Seq", "Deed_Date", "Volume", "Page", "Number", "ObjectID_1"],
     "discoveredOn": "2026-04-29",
     "verified": false,
-    "status": "needs-retry",
     "websiteUrl": "https://www.uvaldecad.org/",
-    "notes": "BIS Consulting standard schema (assumed identical to other BIS counties). REFERER-LOCKED: returns HTTP 403 on direct fetch from outside the BIS app. Same issue as Medina. Server-side proxy or referer-spoofing needed for JVLOT to use this directly."
+    "notes": "BIS Consulting standard schema. wkid=102740. UNLOCKED on Day 2 retry via services6.arcgis.com tenant (not utility.arcgis.com which is referer-locked)."
   },
   "Karnes": {
     "endpointType": "none",
@@ -382,11 +380,14 @@
     "notes": "No public ArcGIS endpoint found. Karnes CAD website (karnescad.org) has no interactive map link; gis.bisclient.com/karnescad returns 404. Likely uses an esearch / Pritchard & Abbott portal only. Fall back to Realie or scraped data."
   },
   "Goliad": {
-    "endpointType": "none",
-    "status": "needs-retry",
+    "endpointType": "arcgis",
+    "url": "https://services7.arcgis.com/Q6vsXnxTnYcWB7qg/arcgis/rest/services/GOLIAD_PARCELS/FeatureServer/0/query",
+    "layerNumber": 0,
+    "fields": ["OBJECTID", "PROP_ID", "tax_yr", "file_as_na", "legal_acre", "legal_desc", "tract_or_l", "abs_subdv_", "block", "situs_num", "situs_stre", "situs_st_1", "situs_st_2", "situs_city", "situs_stat", "situs_zip", "addr_line1", "addr_line2", "addr_line3", "addr_city", "addr_state", "zip", "deed_book_", "deed_book1", "deed_dt", "deed_num", "seq_num", "CADLink"],
     "discoveredOn": "2026-04-29",
+    "verified": false,
     "websiteUrl": "https://www.goliadcad.org/",
-    "notes": "BIS app at gis.bisclient.com/goliadcad/ loads but did not initialize a parcels FeatureServer query within wait window — possibly a slower-loading config or the app is wired to a non-parcel-first layer. Worth retrying with longer wait or by inspecting the BIS app's config.json."
+    "notes": "Different vendor (services7.arcgis.com tenant Q6vsXnxTnYcWB7qg, NOT BIS Consultants). 30 fields (truncated to 10 chars due to ArcGIS Online limits). NO value fields exposed (no market / land_val / imprv_val) — Realie supplement required for value data. wkid=102100. ObjectID is OBJECTID (not ObjectID_1)."
   },
   "DeWitt": {
     "endpointType": "none",
@@ -454,7 +455,6 @@
   "Bell": { "endpointType": "arcgis", "url": "https://utility.arcgis.com/usrsvcs/servers/6efa79e05bde4b98851880b45f63ea52/rest/services/BellCADWebService/FeatureServer/0/query", "layerNumber": 0, "fields": ["prop_id_text", "prop_id", "owner_tax_yr", "file_as_name", "legal_acreage", "hood_cd", "school", "city", "county", "next_appraisal_dt", "legal_desc", "legal_desc2", "legal_desc3", "tract_or_lot", "abs_subdv_cd", "land_val", "imprv_val", "market", "block", "map_id", "geo_id", "situs_num", "situs_street_prefx", "situs_street", "situs_street_sufix", "situs_city", "situs_state", "situs_zip", "addr_line1", "addr_line2", "addr_line3", "addr_city", "addr_state", "zip", "Deed_Seq", "Deed_Date", "Volume", "Page", "Number", "ObjectID_1"], "discoveredOn": "2026-04-29", "verified": false, "websiteUrl": "https://www.bellcad.org/", "notes": "BIS standard schema. wkid=102739. Tier C metro (Killeen / Temple). Field count slightly smaller (42 vs 44/48)." },
   "McLennan": { "endpointType": "none", "status": "realie-fallback", "discoveredOn": "2026-04-29", "websiteUrl": "https://www.mclennancad.org/", "notes": "No public ArcGIS endpoint via BIS path (404). Tier C metro (Waco). Fall back to Realie." },
   "Coryell": { "endpointType": "arcgis", "url": "https://utility.arcgis.com/usrsvcs/servers/4ecc64c337814bc3a0886db1810b5f20/rest/services/CoryellCADWebService/FeatureServer/0/query", "layerNumber": 0, "fields": ["prop_id_text", "prop_id", "owner_tax_yr", "file_as_name", "legal_acreage", "hood_cd", "school", "city", "county", "next_appraisal_dt", "legal_desc", "legal_desc2", "legal_desc3", "tract_or_lot", "abs_subdv_cd", "land_val", "imprv_val", "market", "block", "map_id", "geo_id", "situs_num", "situs_street_prefx", "situs_street", "situs_street_sufix", "situs_city", "situs_state", "situs_zip", "addr_line1", "addr_line2", "addr_line3", "addr_city", "addr_state", "zip", "Deed_Seq", "Deed_Date", "Volume", "Page", "Number", "ObjectID_1"], "discoveredOn": "2026-04-29", "verified": false, "websiteUrl": "https://www.coryellcad.org/", "notes": "BIS standard schema. wkid=102739." },
-  "Lampasas": { "endpointType": "arcgis", "url": "https://utility.arcgis.com/usrsvcs/servers/4bc452d500cd4a3586b3ef37e1256bed/rest/services/LampasasCADWebService/FeatureServer/0/query", "layerNumber": 0, "fields": ["prop_id_text", "prop_id", "owner_tax_yr", "file_as_name", "legal_acreage", "hood_cd", "school", "city", "county", "next_appraisal_dt", "legal_desc", "legal_desc2", "legal_desc3", "tract_or_lot", "abs_subdv_cd", "land_val", "imprv_val", "market", "block", "map_id", "geo_id", "situs_num", "situs_street_prefx", "situs_street", "situs_street_sufix", "situs_city", "situs_state", "situs_zip", "addr_line1", "addr_line2", "addr_line3", "addr_city", "addr_state", "zip", "Deed_Seq", "Deed_Date", "Volume", "Page", "Number", "ObjectID_1"], "discoveredOn": "2026-04-29", "verified": false, "status": "needs-retry", "websiteUrl": "https://www.lampasascad.org/", "notes": "BIS schema (assumed identical). REFERER-LOCKED: HTTP 403 from outside the BIS app. Same issue as Medina/Uvalde." },
+  "Lampasas": { "endpointType": "arcgis", "url": "https://services6.arcgis.com/j94FvPaik4etwHFk/arcgis/rest/services/LampasasCADWebService/FeatureServer/0/query", "layerNumber": 0, "fields": ["prop_id_text", "prop_id", "owner_tax_yr", "file_as_name", "legal_acreage", "hood_cd", "school", "city", "county", "next_appraisal_dt", "legal_desc", "legal_desc2", "legal_desc3", "tract_or_lot", "abs_subdv_cd", "land_val", "imprv_val", "market", "block", "map_id", "geo_id", "situs_num", "situs_street_prefx", "situs_street", "situs_street_sufix", "situs_city", "situs_state", "situs_zip", "addr_line1", "addr_line2", "addr_line3", "addr_city", "addr_state", "zip", "Deed_Seq", "Deed_Date", "Volume", "Page", "Number", "ObjectID_1"], "discoveredOn": "2026-04-29", "verified": false, "websiteUrl": "https://www.lampasascad.org/", "notes": "BIS standard schema. wkid=102739. UNLOCKED via services6.arcgis.com tenant." },
   "Hill": { "endpointType": "arcgis", "url": "https://utility.arcgis.com/usrsvcs/servers/f91ed9bdaa3a4190976c7cd2bddc46c6/rest/services/HillCADWebService/FeatureServer/0/query", "layerNumber": 0, "fields": ["prop_id_text", "prop_id", "owner_tax_yr", "file_as_name", "legal_acreage", "hood_cd", "school", "city", "county", "next_appraisal_dt", "legal_desc", "legal_desc2", "legal_desc3", "tract_or_lot", "abs_subdv_cd", "land_val", "imprv_val", "market", "block", "map_id", "geo_id", "situs_num", "situs_street_prefx", "situs_street", "situs_street_sufix", "situs_city", "situs_state", "situs_zip", "addr_line1", "addr_line2", "addr_line3", "addr_city", "addr_state", "zip", "Deed_Seq", "Deed_Date", "Volume", "Page", "Number", "ObjectID_1"], "discoveredOn": "2026-04-29", "verified": false, "websiteUrl": "https://www.hillcad.org/", "notes": "BIS standard schema. wkid=102738." },
-  "Falls": { "endpointType": "arcgis", "url": "https://utility.arcgis.com/usrsvcs/servers/53ef7c50fb304296814479dcdd077bd0/rest/services/FallsCADWebService/FeatureServer/0/query", "layerNumber": 0, "fields": ["prop_id_text", "prop_id", "owner_tax_yr", "file_as_name", "legal_acreage", "hood_cd", "school", "city", "county", "next_appraisal_dt", "legal_desc", "legal_desc2", "legal_desc3", "tract_or_lot", "abs_subdv_cd", "land_val", "imprv_val", "market", "block", "map_id", "geo_id", "situs_num", "situs_street_prefx", "situs_street", "situs_street_sufix", "situs_city", "situs_state", "situs_zip", "addr_line1", "addr_line2", "addr_line3", "addr_city", "addr_state", "zip", "Deed_Seq", "Deed_Date", "Volume", "Page", "Number", "ObjectID_1"], "discoveredOn": "2026-04-29", "verified": false, "websiteUrl": "https://www.fallscad.org/", "notes": "BIS standard schema. wkid=102739." }
-}
+  "Falls": { "endpointType": "arcgis", "url": "https://utility.arcgis.com/usrsvcs/servers/53ef7c50fb304296814479dcdd077bd0/rest/services/FallsCADWebService/FeatureServer/0/query", "layerNumber": 0, "fields": ["prop_id_text", "prop_id", "owner_tax_yr", "file_as_name", "legal_acreage", "hood_cd", "school", "city", "county", "next_appraisal_dt", "legal_desc", "legal_desc2", "legal_desc3", "tract_or_lot", "abs_subdv_cd", "land_val", "imprv_val", "market", "block", "map_id", "geo_id", "situs_num", "situs_street_prefx", "situs_street", "situs_street_sufix", "situs_city", "situs_state", "situs_zip", "addr_line1", "addr_line2", "addr_line3", "addr_city", "addr_state", "zip", "Deed_Seq", "Deed_Date", "Volume", "Page", "Number", "ObjectID_1"], "discoveredOn": "2026-04-29", "verified": false, "websiteUr
