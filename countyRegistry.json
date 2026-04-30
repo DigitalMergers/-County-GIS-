@@ -243,4 +243,198 @@
     "websiteUrl": "https://wilson-cad.org/",
     "notes": "BIS Consulting standard schema. wkid=102740. Note: hyphen in domain (wilson-cad.org); www.wilsoncad.org returns DNS error."
   },
- 
+  "Guadalupe": {
+    "endpointType": "arcgis",
+    "url": "https://utility.arcgis.com/usrsvcs/servers/4a5a0e55fa144e5e966a7a937c925aca/rest/services/GuadalupeCADWebService/FeatureServer/0/query",
+    "layerNumber": 0,
+    "fields": ["prop_id_text", "prop_id", "owner_tax_yr", "file_as_name", "legal_acreage", "hood_cd", "school", "city", "county", "next_appraisal_dt", "legal_desc", "legal_desc2", "legal_desc3", "tract_or_lot", "abs_subdv_cd", "land_val", "imprv_val", "market", "block", "map_id", "geo_id", "situs_num", "situs_street_prefx", "situs_street", "situs_street_sufix", "situs_city", "situs_state", "situs_zip", "addr_line1", "addr_line2", "addr_line3", "addr_city", "addr_state", "zip", "Deed_Seq", "Deed_Date", "Volume", "Page", "Number", "ObjectID_1"],
+    "discoveredOn": "2026-04-29",
+    "verified": false,
+    "websiteUrl": "https://www.guadalupead.org/",
+    "notes": "BIS Consulting standard schema. wkid=102740. Direct neighbor of Bexar (east — Seguin)."
+  },
+  "Caldwell": {
+    "endpointType": "arcgis",
+    "url": "https://services.arcgis.com/rVxY74DxxIDrDbc0/arcgis/rest/services/CaldwellCADWebService/FeatureServer/0/query",
+    "layerNumber": 0,
+    "fields": ["prop_id_text", "prop_id", "owner_tax_yr", "file_as_name", "legal_acreage", "hood_cd", "school", "city", "county", "next_appraisal_dt", "legal_desc", "legal_desc2", "legal_desc3", "tract_or_lot", "abs_subdv_cd", "land_val", "imprv_val", "market", "block", "map_id", "geo_id", "situs_num", "situs_street_prefx", "situs_street", "situs_street_sufix", "situs_city", "situs_state", "situs_zip", "addr_line1", "addr_line2", "addr_line3", "addr_city", "addr_state", "zip", "Deed_Seq", "Deed_Date", "Volume", "Page", "Number", "ObjectID_1"],
+    "discoveredOn": "2026-04-29",
+    "verified": false,
+    "websiteUrl": "https://www.caldwellcad.org/",
+    "notes": "BIS schema, but UNUSUAL HOSTING: served from services.arcgis.com (public AGOL tenant 'rVxY74DxxIDrDbc0'), NOT utility.arcgis.com (federated proxy). Likely CORS-friendly and does not require referer. wkid=102740."
+  },
+  "Bastrop": {
+    "endpointType": "arcgis",
+    "url": "https://utility.arcgis.com/usrsvcs/servers/3c3898a5ef9a46caa69d8fd34de0f488/rest/services/BastropCADWebService/FeatureServer/0/query",
+    "layerNumber": 0,
+    "fields": ["prop_id_text", "prop_id", "owner_tax_yr", "file_as_name", "legal_acreage", "hood_cd", "school", "city", "county", "next_appraisal_dt", "legal_desc", "legal_desc2", "legal_desc3", "tract_or_lot", "abs_subdv_cd", "land_val", "imprv_val", "market", "Block", "map_id", "geo_id", "situs_num", "situs_street_prefx", "situs_street", "situs_street_sufix", "situs_city", "situs_state", "situs_zip", "addr_line1", "addr_line2", "addr_line3", "addr_city", "addr_state", "zip", "Deed_Seq", "Deed_Date", "Volume", "Page", "Number", "ObjectID_1"],
+    "discoveredOn": "2026-04-29",
+    "verified": false,
+    "websiteUrl": "https://www.bastropcad.org/",
+    "notes": "BIS Consulting standard schema. wkid=102739."
+  },
+  "Fayette": {
+    "endpointType": "arcgis",
+    "url": "https://utility.arcgis.com/usrsvcs/servers/d0cd77cc0e5d42cb8959515daf0ddb73/rest/services/FayetteCADWebService/FeatureServer/0/query",
+    "layerNumber": 0,
+    "fields": ["prop_id_text", "prop_id", "owner_tax_yr", "file_as_name", "legal_acreage", "hood_cd", "school", "city", "county", "next_appraisal_dt", "legal_desc", "legal_desc2", "legal_desc3", "tract_or_lot", "abs_subdv_cd", "land_val", "imprv_val", "market", "block", "map_id", "geo_id", "situs_num", "situs_street_prefx", "situs_street", "situs_street_sufix", "situs_city", "situs_state", "situs_zip", "addr_line1", "addr_line2", "addr_line3", "addr_city", "addr_state", "zip", "Deed_Seq", "Deed_Date", "Volume", "Page", "Number", "ObjectID_1"],
+    "discoveredOn": "2026-04-29",
+    "verified": false,
+    "websiteUrl": "https://www.fayettecad.org/",
+    "notes": "BIS Consulting standard schema. wkid=102100 (Web Mercator) — different from most BIS counties."
+  },
+  "Lavaca": {
+    "endpointType": "arcgis",
+    "url": "https://utility.arcgis.com/usrsvcs/servers/a5effe89f2ba47eabc89510447680fb8/rest/services/LavacaCADWebService/FeatureServer/0/query",
+    "layerNumber": 0,
+    "fields": ["prop_id_text", "prop_id", "owner_tax_yr", "file_as_name", "legal_acreage", "hood_cd", "school", "city", "county", "next_appraisal_dt", "legal_desc", "legal_desc2", "legal_desc3", "tract_or_lot", "abs_subdv_cd", "land_val", "imprv_val", "market", "block", "map_id", "geo_id", "situs_num", "situs_street_prefx", "situs_street", "situs_street_sufix", "situs_city", "situs_state", "situs_zip", "addr_line1", "addr_line2", "addr_line3", "addr_city", "addr_state", "zip", "Deed_Seq", "Deed_Date", "Volume", "Page", "Number", "ObjectID_1"],
+    "discoveredOn": "2026-04-29",
+    "verified": false,
+    "websiteUrl": "https://www.lavacacad.com/",
+    "notes": "BIS Consulting standard schema. wkid=102740."
+  },
+  "Mason": {
+    "endpointType": "arcgis",
+    "url": "https://utility.arcgis.com/usrsvcs/servers/8db3982e95904cc296ca8442af0c4eb5/rest/services/MasonCADWebService/FeatureServer/0/query",
+    "layerNumber": 0,
+    "fields": ["prop_id_text", "prop_id", "owner_tax_yr", "file_as_name", "legal_acreage", "hood_cd", "school", "city", "county", "next_appraisal_dt", "legal_desc", "legal_desc2", "legal_desc3", "tract_or_lot", "abs_subdv_cd", "land_val", "imprv_val", "market", "block", "map_id", "geo_id", "situs_num", "situs_street_prefx", "situs_street", "situs_street_sufix", "situs_city", "situs_state", "situs_zip", "addr_line1", "addr_line2", "addr_line3", "addr_city", "addr_state", "zip", "Deed_Seq", "Deed_Date", "Volume", "Page", "Number", "ObjectID_1"],
+    "discoveredOn": "2026-04-29",
+    "verified": false,
+    "websiteUrl": "https://www.masoncad.org/",
+    "notes": "BIS Consulting standard schema. wkid=102739."
+  },
+  "Real": {
+    "endpointType": "arcgis",
+    "url": "https://utility.arcgis.com/usrsvcs/servers/d838d2e8092a4aa39dc173cdd1624a4d/rest/services/RealCADWebService/FeatureServer/0/query",
+    "layerNumber": 0,
+    "fields": ["prop_id_text", "prop_id", "owner_tax_yr", "file_as_name", "legal_acreage", "hood_cd", "school", "city", "county", "next_appraisal_dt", "legal_desc", "legal_desc2", "legal_desc3", "tract_or_lot", "abs_subdv_cd", "land_val", "imprv_val", "market", "block", "map_id", "geo_id", "situs_num", "situs_street_prefx", "situs_street", "situs_street_sufix", "situs_city", "situs_state", "situs_zip", "addr_line1", "addr_line2", "addr_line3", "addr_city", "addr_state", "zip", "Deed_Seq", "Deed_Date", "Volume", "Page", "Number", "ObjectID_1"],
+    "discoveredOn": "2026-04-29",
+    "verified": false,
+    "websiteUrl": "https://www.realcad.org/",
+    "notes": "BIS Consulting standard schema. wkid=102740."
+  },
+  "Edwards": {
+    "endpointType": "arcgis",
+    "url": "https://utility.arcgis.com/usrsvcs/servers/f3531c87ca084095b1b1b81c840b6a57/rest/services/EdwardsCADWebService/FeatureServer/0/query",
+    "layerNumber": 0,
+    "fields": ["prop_id_text", "prop_id", "owner_tax_yr", "file_as_name", "legal_acreage", "hood_cd", "school", "city", "county", "next_appraisal_dt", "legal_desc", "legal_desc2", "legal_desc3", "tract_or_lot", "abs_subdv_cd", "land_val", "imprv_val", "market", "block", "map_id", "geo_id", "situs_num", "situs_street_prefx", "situs_street", "situs_street_sufix", "situs_city", "situs_state", "situs_zip", "addr_line1", "addr_line2", "addr_line3", "addr_city", "addr_state", "zip", "Deed_Seq", "Deed_Date", "Volume", "Page", "Number", "ObjectID_1"],
+    "discoveredOn": "2026-04-29",
+    "verified": false,
+    "websiteUrl": "https://www.edwardscad.org/",
+    "notes": "BIS Consulting standard schema. wkid=102740."
+  },
+  "Kinney": {
+    "endpointType": "arcgis",
+    "url": "https://utility.arcgis.com/usrsvcs/servers/97bbde5f49a9410498c3f6bba6ebc876/rest/services/KinneyCADWebService/FeatureServer/0/query",
+    "layerNumber": 0,
+    "fields": ["prop_id_text", "prop_id", "owner_tax_yr", "file_as_name", "legal_acreage", "hood_cd", "school", "city", "county", "next_appraisal_dt", "legal_desc", "legal_desc2", "legal_desc3", "tract_or_lot", "abs_subdv_cd", "land_val", "imprv_val", "market", "block", "map_id", "geo_id", "situs_num", "situs_street_prefx", "situs_street", "situs_street_sufix", "situs_city", "situs_state", "situs_zip", "addr_line1", "addr_line2", "addr_line3", "addr_city", "addr_state", "zip", "Deed_Seq", "Deed_Date", "Volume", "Page", "Number", "ObjectID_1"],
+    "discoveredOn": "2026-04-29",
+    "verified": false,
+    "websiteUrl": "https://www.kinneycad.org/",
+    "notes": "BIS Consulting standard schema. wkid=102740."
+  },
+  "Kimble": {
+    "endpointType": "arcgis",
+    "url": "https://utility.arcgis.com/usrsvcs/servers/056cf30189464ea088a249a24067a103/rest/services/KimbleCADWebService/FeatureServer/0/query",
+    "layerNumber": 0,
+    "fields": ["prop_id_text", "prop_id", "owner_tax_yr", "file_as_name", "legal_acreage", "hood_cd", "school", "city", "county", "next_appraisal_dt", "legal_desc", "legal_desc2", "legal_desc3", "tract_or_lot", "abs_subdv_cd", "land_val", "imprv_val", "market", "block", "map_id", "geo_id", "situs_num", "situs_street_prefx", "situs_street", "situs_street_sufix", "situs_city", "situs_state", "situs_zip", "addr_line1", "addr_line2", "addr_line3", "addr_city", "addr_state", "zip", "Deed_Seq", "Deed_Date", "Volume", "Page", "Number", "ObjectID_1"],
+    "discoveredOn": "2026-04-29",
+    "verified": false,
+    "websiteUrl": "https://www.kimblecad.org/",
+    "notes": "BIS Consulting standard schema. wkid=102739."
+  },
+  "Dimmit": {
+    "endpointType": "arcgis",
+    "url": "https://utility.arcgis.com/usrsvcs/servers/fc5e50e98217462ca878075deac66d77/rest/services/DimmitCADWebService/FeatureServer/0/query",
+    "layerNumber": 0,
+    "fields": ["prop_id_text", "prop_id", "owner_tax_yr", "file_as_name", "legal_acreage", "hood_cd", "school", "city", "county", "next_appraisal_dt", "legal_desc", "legal_desc2", "legal_desc3", "tract_or_lot", "abs_subdv_cd", "land_val", "imprv_val", "market", "block", "map_id", "geo_id", "situs_num", "situs_street_prefx", "situs_street", "situs_street_sufix", "situs_city", "situs_state", "situs_zip", "addr_line1", "addr_line2", "addr_line3", "addr_city", "addr_state", "zip", "Deed_Seq", "Deed_Date", "Volume", "Page", "Number", "ObjectID_1"],
+    "discoveredOn": "2026-04-29",
+    "verified": false,
+    "websiteUrl": "https://www.dimmitcad.org/",
+    "notes": "BIS Consulting standard schema. wkid=102740."
+  },
+  "Zavala": {
+    "endpointType": "arcgis",
+    "url": "https://utility.arcgis.com/usrsvcs/servers/fbae3632f3da40af998a7fdf60079f54/rest/services/ZavalaCADWebService/FeatureServer/0/query",
+    "layerNumber": 0,
+    "fields": ["prop_id_text", "prop_id", "owner_tax_yr", "file_as_name", "legal_acreage", "hood_cd", "school", "city", "county", "next_appraisal_dt", "legal_desc", "legal_desc2", "legal_desc3", "tract_or_lot", "abs_subdv_cd", "land_val", "imprv_val", "market", "block", "map_id", "geo_id", "situs_num", "situs_street_prefx", "situs_street", "situs_street_sufix", "situs_city", "situs_state", "situs_zip", "addr_line1", "addr_line2", "addr_line3", "addr_city", "addr_state", "zip", "Deed_Seq", "Deed_Date", "Volume", "Page", "Number", "ObjectID_1"],
+    "discoveredOn": "2026-04-29",
+    "verified": false,
+    "websiteUrl": "https://www.zavalacad.org/",
+    "notes": "BIS Consulting standard schema. wkid=102740."
+  },
+  "Uvalde": {
+    "endpointType": "arcgis",
+    "url": "https://utility.arcgis.com/usrsvcs/servers/29ac4a4d10d94e779fcccb4566123a3d/rest/services/UvaldeCADWebService/FeatureServer/0/query",
+    "layerNumber": 0,
+    "fields": ["prop_id_text", "prop_id", "owner_tax_yr", "file_as_name", "legal_acreage", "hood_cd", "school", "city", "county", "next_appraisal_dt", "legal_desc", "legal_desc2", "legal_desc3", "tract_or_lot", "abs_subdv_cd", "land_val", "imprv_val", "market", "block", "map_id", "geo_id", "situs_num", "situs_street_prefx", "situs_street", "situs_street_sufix", "situs_city", "situs_state", "situs_zip", "addr_line1", "addr_line2", "addr_line3", "addr_city", "addr_state", "zip", "Deed_Seq", "Deed_Date", "Volume", "Page", "Number", "ObjectID_1"],
+    "discoveredOn": "2026-04-29",
+    "verified": false,
+    "status": "needs-retry",
+    "websiteUrl": "https://www.uvaldecad.org/",
+    "notes": "BIS Consulting standard schema (assumed identical to other BIS counties). REFERER-LOCKED: returns HTTP 403 on direct fetch from outside the BIS app. Same issue as Medina. Server-side proxy or referer-spoofing needed for JVLOT to use this directly."
+  },
+  "Karnes": {
+    "endpointType": "none",
+    "status": "realie-fallback",
+    "discoveredOn": "2026-04-29",
+    "websiteUrl": "https://www.karnescad.org/",
+    "notes": "No public ArcGIS endpoint found. Karnes CAD website (karnescad.org) has no interactive map link; gis.bisclient.com/karnescad returns 404. Likely uses an esearch / Pritchard & Abbott portal only. Fall back to Realie or scraped data."
+  },
+  "Goliad": {
+    "endpointType": "none",
+    "status": "needs-retry",
+    "discoveredOn": "2026-04-29",
+    "websiteUrl": "https://www.goliadcad.org/",
+    "notes": "BIS app at gis.bisclient.com/goliadcad/ loads but did not initialize a parcels FeatureServer query within wait window — possibly a slower-loading config or the app is wired to a non-parcel-first layer. Worth retrying with longer wait or by inspecting the BIS app's config.json."
+  },
+  "DeWitt": {
+    "endpointType": "none",
+    "status": "realie-fallback",
+    "discoveredOn": "2026-04-29",
+    "websiteUrl": "https://www.dewittcad.org/",
+    "notes": "No public ArcGIS endpoint found. gis.bisclient.com/dewittcad returns 404. Fall back to Realie."
+  },
+  "Gonzales": {
+    "endpointType": "none",
+    "status": "realie-fallback",
+    "discoveredOn": "2026-04-29",
+    "websiteUrl": "https://www.gonzalescad.org/",
+    "notes": "No public ArcGIS endpoint found. gis.bisclient.com/gonzalescad returns 404. Fall back to Realie."
+  },
+  "Live Oak": {
+    "endpointType": "none",
+    "status": "realie-fallback",
+    "discoveredOn": "2026-04-29",
+    "websiteUrl": "https://www.liveoakcad.org/",
+    "notes": "No public ArcGIS endpoint found via BIS path. Fall back to Realie."
+  },
+  "Frio": {
+    "endpointType": "none",
+    "status": "realie-fallback",
+    "discoveredOn": "2026-04-29",
+    "websiteUrl": "https://www.friocad.com/",
+    "notes": "No public ArcGIS endpoint found via BIS path. Fall back to Realie."
+  },
+  "Maverick": {
+    "endpointType": "none",
+    "status": "realie-fallback",
+    "discoveredOn": "2026-04-29",
+    "websiteUrl": "https://www.maverickcad.org/",
+    "notes": "No public ArcGIS endpoint found via BIS path. Fall back to Realie."
+  },
+  "Val Verde": {
+    "endpointType": "none",
+    "status": "realie-fallback",
+    "discoveredOn": "2026-04-29",
+    "websiteUrl": "https://www.valverdecad.org/",
+    "notes": "No public ArcGIS endpoint found via BIS path. Fall back to Realie."
+  },
+  "San Saba": {
+    "endpointType": "none",
+    "status": "realie-fallback",
+    "discoveredOn": "2026-04-29",
+    "websiteUrl": "https://www.sansabacad.org/",
+    "notes": "No public ArcGIS endpoint found via BIS path. Fall back to Realie."
+  }
+}
